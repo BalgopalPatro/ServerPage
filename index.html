@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Particle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+    integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    #particle {
+      display: block;
+      height: 100vh;
+      width: 100%;
+      background-color: black;
+    }
+
+    .content {
+      position: absolute;
+      width: 100%;
+      color: white;
+    }
+
+    .header {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: x-large;
+    }
+
+    .header h1 {
+      font-size: 300%;
+    }
+
+    .header a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .tab {
+      margin-left: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="particle">
+    <div class="content">
+      <div class="header">
+        <h1>Welcome to my Server</h1>
+        <p>Here you can use <i class="fas fa-database fa-lg fa-fw"></i> Database , <i
+            class="fas fa-server fa-lg fa-fw"></i> API and many more</p>
+        <p> <i class="fab fa-linkedin fa-lg"></i> <a
+            href="https://www.linkedin.com/in/n-balgopal-patro/">n-balgopal-patro</a>
+          <span class="tab"></span>
+          <i class="fab fa-github fa-lg "></i> <a href="https://github.com/BalgopalPatro">BalgopalPatro</a>
+          <span class="tab"></span>
+          <i class="fab fa-facebook fa-lg"></i> <a href="https://www.facebook.com/balgopal.patra">balgopal.patro</a>
+          <span class="tab"></span>
+          <i class="fab fa-stack-overflow fa-lg"></i> <a
+            href="https://stackoverflow.com/users/12248003/n-balgopal-patro">n-balgopal-patro</a>
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Database <i class="fas fa-database fa-lg fa-fw"></i></h3>
+            <p>This is a MySQL <i class="fas fa-database"></i> hosted in my own server </p>
+            <a class="btn btn-danger btn-lg btn-block" href="/phpmyadmin" role="button">Use</a>
+          </div>
+          <div class="col-sm-4">
+            <h3><i class="fab fa-node-js fa-lg fa-fw"></i> API </h3>
+            <p>This is a simple API made with Node.js, Express and MongoDB for authenticating
+              <i class="fa fa-users fa-lg" aria-hidden="true"></i></p>
+          </div>
+          <div class="col-sm-4">
+            <h3>WordPress <i class="fab fa-wordpress fa-lg fa-fw"></i> </h3>
+            <p>This is a simple WordPress Page</p>
+            <a class="btn btn-success btn-lg btn-block" href="/wp" role="button">Veiw</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      particlesJS.load('particle', './particle.json', function () {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
+</body>
+
+</html>
